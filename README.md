@@ -41,6 +41,7 @@ POST запрос к API:
 #
 #### Инструкция по настройке и запуску приложения:
 - для выполнения данных инструкций у вас должен быть установлен Docker;
+- все данные для подключения есть в файле .env-prod (так как приложение тестовое, то данный файл не добавлял в .gitignore);
 - в коммандной строке откройте папку, в которую хотите склонировать проект и запустите команду
 `git clone https://github.com/slychagin/QuizApp.git`;
 - затем перейдите в корневую папку проекта `cd QuizApp`;
@@ -54,12 +55,7 @@ POST запрос к API:
 ![pgadmin_create_server](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_create_server.jpg)
 - в открывшемся окне во вкладке General введите любое имя для сервера:
 ![pgadmin_enter_name](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_enter_name.jpg)
-- в том же окне во вклдаке Connection заполните Host name, Port, Maintenance database, Username, Password:
+- в том же окне во вклдаке Connection заполните Host name = postgres_container, Port=5432, Maintenance database=postgres, Username=postgres, Password=postgres и нажмите Save, чтобы подключиться к серверу:
 ![pgadmin_connection](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_connection.jpg)
-
-
-
-
-
-
-
+- чтобы просмотреть, добавленные в базу данных записи выполните запрос `SELECT * FROM questions;`
+![pgadmin_get_data](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_get_data.jpg)
