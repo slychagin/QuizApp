@@ -46,8 +46,16 @@ POST запрос к API:
 - затем перейдите в корневую папку проекта `cd QuizApp`;
 - создайте образ Docker `docker compose build`;
 - запустите контейнеры `docker compose up` (после выполнения данной команды у вас должны запуститься следующие сервисы: само приложение, база данных postgres и pgadmin);
-- 
-
+- чтобы зайти в само приложение (документация Swagger) зайдите по адресу `http://localhost:9999/docs`;
+- в документации вы можете попробовать зарегистрировать пользователя, залогиниться, выполнить POST запрос к API согласно примерам выше (аутентификация добавлена, но для ускорения процесса, чтобы не надо было логиниться, отключена. При необходимости решается раскомментированием одной строчки в коде);
+- для работы с базой данных в удобном интерфейе Pgadmin необходимо зайти по адресу `http://localhost:5050`, аутентифицироваться введя почту `quiz@quiz.com` и пароль `quiz_777`:
+![pgadmin_auth](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_auth.jpg)
+- далее создайте новый сервер:
+![pgadmin_create_server](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_create_server.jpg)
+- в открывшемся окне во вкладке General введите любое имя для сервера:
+![pgadmin_enter_name](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_enter_name.jpg)
+- в том же окне во вклдаке Connection заполните Host name, Port, Maintenance database, Username, Password:
+![pgadmin_connection](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/pgadmin_connection.jpg)
 
 
 
