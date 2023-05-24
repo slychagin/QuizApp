@@ -28,15 +28,15 @@ API  that allows you to save questions for quizzes to the database
 #### Пример запроса к POST API сервиса в документации Swagger:
 POST запрос к API:
 
-![post](https://github.com/slychagin/quiz_app/blob/master/demo_gifs/POST%20request.gif)
+![post](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/POST%20request.gif)
 
 Проверяем базу данных в pgadmin:
 
-![check db](https://github.com/slychagin/quiz_app/blob/master/demo_gifs/check%20db.gif)
+![check db](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/check%20db.gif)
 
 Аутентификация пользователя:
 
-![auth](https://github.com/slychagin/quiz_app/blob/master/demo_gifs/Authentication.gif)
+![auth](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/Authentication.gif)
 
 #
 #### Инструкция по настройке и запуску приложения:
