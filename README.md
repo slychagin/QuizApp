@@ -25,7 +25,7 @@ API  that allows you to save questions for quizzes to the database
 - вэб сервис разворачивается в Docker с помощью docker compose.
 
 #
-#### Пример запроса к POST API сервиса в документации Swagger:
+#### Пример запроса POST к API сервиса в документации Swagger:
 POST запрос к API:
 
 ![post](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/POST%20request.gif)
