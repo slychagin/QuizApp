@@ -1,4 +1,4 @@
-# quiz_app
+# QuizApp
 ![made by](https://img.shields.io/badge/made_by-slychagin-orange)
 ![python](https://img.shields.io/badge/python-v3.10.5-blue)
 ![fastapi](https://img.shields.io/badge/fastapi-v0.95.1-green)
