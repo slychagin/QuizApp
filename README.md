@@ -1,4 +1,4 @@
-# quiz_app
+# QuizApp
 ![made by](https://img.shields.io/badge/made_by-slychagin-orange)
 ![python](https://img.shields.io/badge/python-v3.10.5-blue)
 ![fastapi](https://img.shields.io/badge/fastapi-v0.95.1-green)
@@ -28,11 +28,11 @@ API  that allows you to save questions for quizzes to the database
 #### Пример запроса POST к API сервиса в документации Swagger:
 POST запрос к API:
 
-![post](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/POST%20request.gif)
+![post](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/post_request.gif)
 
 Проверяем базу данных в pgadmin:
 
-![check db](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/check%20db.gif)
+![check db](https://github.com/slychagin/QuizApp/blob/master/demo_gifs/check_db.gif)
 
 Аутентификация пользователя:
 
