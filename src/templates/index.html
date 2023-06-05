@@ -65,6 +65,7 @@
 		 })
 		 .then(response => response.json())
 		 .then(function(response){
+		 console.log(response);
 		 	let alert = '';
 		 	let message;
 
@@ -80,11 +81,16 @@
 				document.getElementsByClassName('loader')[0].style.display = 'none';
 			} else {
 				document.getElementsByClassName('loader')[0].style.display = 'none';
-				message = 'Questions uploaded to the database!<br><br>' +
-					'Previous question data:<br>' +
-					`id:  ${response.previous_question.id}<br>` +
-					`question:  ${response.previous_question.question}<br>` +
-					`answer:  ${response.previous_question.answer}<br>`;
+				if (response.previous_question) {
+					message = 'Questions uploaded to the database!<br><br>' +
+						'Previous question data:<br>' +
+						`id:  ${response.previous_question.id}<br>` +
+						`question:  ${response.previous_question.question}<br>` +
+						`answer:  ${response.previous_question.answer}<br>`;
+				} else {
+					message = 'Questions uploaded to the database!<br>'
+				}
+
 				document.getElementById('result').innerHTML = message;
 				document.getElementById("uploadForm").reset();
 
