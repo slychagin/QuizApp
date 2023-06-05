@@ -92,7 +92,7 @@ async def add_questions(
         await session.commit()
 
         return {
-            "Previous question": {
+            "previous_question": {
                 "id": previous_question.question_id,
                 "question": previous_question.question,
                 "answer": previous_question.answer
@@ -102,5 +102,5 @@ async def add_questions(
         raise HTTPException(status_code=500, detail={
             'status': 'error',
             'data': None,
-            'details': None
+            'details': 'Sorry, something went wrong.'
         })
